@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>zDungeonStudio · Freelance Database &amp; Web Maintenance</title>
-<meta name="description" content="Eddie Jr Zaspa hosts, backs up, secures and fixes the databases and websites that offices depend on. Based in Cebu, Philippines.">
+<meta name="description" content="Eddie Jr Zaspa hosts, backs up, secures and fixes the databases and websites that offices depend on. Serving Bantayan Island, Cebu.">
 <meta name="author" content="Eddie Jr Zaspa">
 <meta name="theme-color" content="#F26A1B">
 <link rel="canonical" href="https://schorzen.github.io/zDungeonStudio/">
@@ -122,9 +122,29 @@ section h2{font-size:clamp(28px,4vw,38px);font-weight:700;letter-spacing:-.02em;
 .person span{display:block}
 .fine{font-size:13px;color:var(--dim);margin:0}
 
+.hire{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.hire>*{min-width:0}
+.flow{list-style:none;padding:0;margin:0;display:grid;gap:12px;counter-reset:f}
+.flow li{counter-increment:f;display:grid;grid-template-columns:40px 1fr;gap:14px;background:var(--slab);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.flow li::before{content:counter(f);display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--brand);color:var(--on-brand);font-family:var(--display);font-weight:800;font-size:18px}
+.flow b{display:block;font-family:var(--display);font-size:18px;margin-bottom:2px}
+.flow span{color:var(--dim);font-size:15px}
+.side{display:grid;gap:16px}
+.box{background:var(--slab);border:1px solid var(--line);border-radius:12px;padding:20px}
+.box h3{font-size:18px;margin-bottom:10px}
+.box p{margin:0;color:var(--dim);font-size:15px}
+.towns{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0 0}
+.towns li{background:var(--torch-soft);color:var(--ink);border-radius:99px;padding:4px 12px;font-size:14px;font-weight:600}
+.pay{display:grid;gap:10px;margin-top:4px}
+.pay div{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pay span{color:var(--dim);font-size:14px}
+.pay b{font-family:var(--mono);font-weight:600;overflow-wrap:anywhere}
+.safe{border-left:4px solid var(--brand)}
+.box .btn{margin-top:14px;width:100%;justify-content:center}
+
 footer{padding-block:30px 40px;color:var(--dim);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line)}
 
-@media (max-width:860px){.hero,.work,.contact{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.hero,.work,.contact,.hire{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.grid,.steps{grid-template-columns:1fr}.contact{padding:22px}}
 @media (prefers-reduced-motion:no-preference){.pill i{animation:p 2.4s ease-in-out infinite}@keyframes p{50%{opacity:.35}}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -138,7 +158,7 @@ footer{padding-block:30px 40px;color:var(--dim);font-size:13px;display:flex;just
   <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#F26A1B"/><path d="M14 56V30a18 18 0 0 1 36 0v26z" fill="#1B2130"/><path d="M22.5 30.5h19L22.5 47.5h19" fill="none" stroke="#F26A1B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span>zDungeon<b>Studio</b></span>
  </a>
- <nav aria-label="Sections"><a href="#services">Services</a><a href="#work">Work</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+ <nav aria-label="Sections"><a href="#services">Services</a><a href="#work">Work</a><a href="#hire">Hire Eddie</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
 </header>
 
 <main id="main">
@@ -147,7 +167,7 @@ footer{padding-block:30px 40px;color:var(--dim);font-size:13px;display:flex;just
   <div class="who"><img src="assets/eddie.jpg" alt="Eddie Jr Zaspa" width="52" height="52"><div class="eyebrow">Eddie Jr Zaspa · Freelance</div></div>
   <h1>Database &amp; web maintenance that <span>keeps records safe</span>.</h1>
   <p class="lead">I host, back up, secure and fix the databases and websites that offices depend on every day, so the people using them never have to think about it.</p>
-  <div class="cta"><a class="btn main" href="#contact">Ask for a quotation</a><a class="btn ghost" href="#work">See recent work</a></div>
+  <div class="cta"><a class="btn main" href="#hire">Hire Eddie</a><a class="btn ghost" href="#work">See recent work</a></div>
  </div>
  <div class="console" role="img" aria-label="Example maintenance status panel">
   <div class="ctop"><span>records-db · status</span><span class="pill"><i></i>Healthy</span></div>
@@ -194,6 +214,40 @@ footer{padding-block:30px 40px;color:var(--dim);font-size:13px;display:flex;just
  </div>
 </section>
 
+<section id="hire">
+ <div class="eyebrow">Hire Eddie</div>
+ <h2>Book, pay online, and Eddie comes to you</h2>
+ <p class="sub">For homes, shops, resorts and offices on Bantayan Island. Four steps from booking to handover.</p>
+ <div class="hire">
+  <ol class="flow">
+   <li><div><b>Book</b><span>Message Eddie with what you need: a database, a website, or fixes to one you already have. He replies with the price and a visit date.</span></div></li>
+   <li><div><b>Pay online</b><span>Pay through GCash or Maya to confirm your booking, then send a screenshot of your payment.</span></div></li>
+   <li><div><b>Site visit</b><span>Eddie comes to your place on the agreed date and sets everything up or fixes it with you.</span></div></li>
+   <li><div><b>Handover</b><span>Eddie gives you every account, password and admin access, in person. You own all of it, and the job is done.</span></div></li>
+  </ol>
+  <div class="side">
+   <div class="box">
+    <h3>Service area</h3>
+    <p>On-site visits on Bantayan Island only.</p>
+    <ul class="towns"><li>Santa Fe</li><li>Bantayan</li><li>Madridejos</li></ul>
+   </div>
+   <div class="box">
+    <h3>Pay online</h3>
+    <div class="pay">
+     <div><span>GCash</span><b>To be added</b></div>
+     <div><span>Maya</span><b>To be added</b></div>
+     <div><span>Account name</span><b>Eddie Jr Zaspa</b></div>
+    </div>
+    <a class="btn main" href="#contact">Book Eddie</a>
+   </div>
+   <div class="box safe">
+    <h3>Your accounts stay safe</h3>
+    <p>Never send passwords by chat or text. Logins are handed over face to face during the visit, and you can change them right after.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
 <section id="how">
  <div class="eyebrow">How it works</div>
  <h2>From quotation to a year of upkeep</h2>
@@ -217,7 +271,7 @@ footer{padding-block:30px 40px;color:var(--dim);font-size:13px;display:flex;just
    <div class="person"><img src="assets/eddie.jpg" alt="Photo of Eddie Jr Zaspa" width="72" height="72" loading="lazy"><div><b>Eddie Jr Zaspa</b><span>Database &amp; web maintenance</span></div></div>
    <div><span>Mobile</span><b>To be added</b></div>
    <div><span>Email</span><b>To be added</b></div>
-   <div><span>Based in</span><b>Cebu, Philippines</b></div>
+   <div><span>Service area</span><b>Bantayan Island, Cebu</b></div>
   </div>
  </div>
 </section>
