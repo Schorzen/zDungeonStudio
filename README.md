@@ -1,6 +1,6 @@
 # zDungeonStudio
 
-Website for zDungeonStudio, freelance database and web maintenance by Eddie Jr Zaspa (Cebu, Philippines).
+Website for zDungeonStudio, freelance database and web maintenance by Jireh Joy Paluga (Cebu, Philippines).
 
 Live: https://schorzen.github.io/zDungeonStudio/
 
